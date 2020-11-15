@@ -3,7 +3,7 @@
 import sys, getopt
 
 def caesar(data, key, mode):
-    alphabet = 'abcdefghijklmnopqrstuvwyzABCDEFGHIJKLMNOPQRSTUVWYZ'
+    alphabet = 'abcdefghijklmnñopqrstuvwyzABCDEFGHIJKLMNOPQRSTUVWYZ'
     new_data = ''
     for c in data:
         # Shift character

@@ -1,3 +1,4 @@
+# How to use it
 # python caesar.py -k <key> -m <mode> -i <input_file> -o <output_file>
 
 import sys, getopt
@@ -13,7 +14,10 @@ def caesar(data, key, mode):
             new_data += c
         else:
             # Shift it based on key and mode
-            new_index = index + key if mode == 1 else index - key
+            if mode == 1:
+              new_index = index + key
+            else:
+              new_index = index - key
             new_index %= len(alphabet)
             new_data += alphabet[new_index:new_index+1]
     # Return the ciphered text

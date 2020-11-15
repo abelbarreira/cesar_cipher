@@ -1,5 +1,7 @@
 # How to use it
 # python caesar.py -k <key> -m <mode> -i <input_file> -o <output_file>
+#
+#   <mode> as Enc or Dec
 
 import sys, getopt
 
@@ -14,7 +16,7 @@ def caesar(data, key, mode):
             new_data += c
         else:
             # Shift it based on key and mode
-            if mode == 1:
+            if mode == "Enc":
               new_index = index + key
             else:
               new_index = index - key
@@ -27,7 +29,7 @@ if __name__ == '__main__':
     syntax = 'k:m:i:o:'
     # Default arguments
     key = 1
-    mode = 1
+    mode = "Enc"
     out_file = 'out.txt'
     in_file = 'in.txt'
     try:
@@ -36,7 +38,7 @@ if __name__ == '__main__':
             if o == '-k':
                 key = int(a)
             elif o == '-m':
-                mode = int(a)
+                mode = str(a)
             elif o == '-i':
                 in_file = a
             elif o == '-o':

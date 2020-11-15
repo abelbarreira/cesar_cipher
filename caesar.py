@@ -1,5 +1,6 @@
 # How to use it
 # python caesar.py -k <key> -m <mode> -i <input_file> -o <output_file>
+# Pending document here, please.
 
 import sys, getopt
 

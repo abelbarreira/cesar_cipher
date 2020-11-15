@@ -5,6 +5,8 @@
 #   <mode> as Enc or Dec
 #   <input_file>
 #   <output_file>
+#
+# Pending add the --help option to the command line [Ana]
 
 import sys, getopt
 

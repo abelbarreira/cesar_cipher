@@ -1,7 +1,10 @@
 # How to use it
 # python caesar.py -k <key> -m <mode> -i <input_file> -o <output_file>
 #
+#   <key> as an integer
 #   <mode> as Enc or Dec
+#   <input_file>
+#   <output_file>
 
 import sys, getopt
 
